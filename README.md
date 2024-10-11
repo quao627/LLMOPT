@@ -1,6 +1,6 @@
 # LLMOPT: Learning to Define and Solve General Optimization Problems from Scratch
 
-This repository contains the code for LLMOPT, enabling the reproduction of data generation, model learning, and automated testing as described in the accompanying paper. The running shell are in the script/* folder with the deepspeed training config in config/*.
+This repository contains the code for LLMOPT, enabling the reproduction of data generation, model learning, and automated testing as described in the accompanying paper. The running shell are in the `script` folder with the deepspeed training config in `config`.
 
 ## 🔥News
 
@@ -13,11 +13,11 @@ This repository contains the code for LLMOPT, enabling the reproduction of data 
 
 ## Usage
 ### Requirements
-Necessary python libraries and versions are in the requirements.txt:
+Necessary python libraries and versions are in the `requirements.txt`:
 ```bash
 pip install -r requirements.txt
 ```
-with python_requires='>=3.6'
+with `python>=3.6`. 
 
 ### Installation
 For development, you can clone the repository and install it locally.
@@ -60,7 +60,7 @@ torchrun $DISTRIBUTED_ARGS ../sft/sft.py \
     --save_only_model \
     --deepspeed ${DS_CONFIG_PATH}
 ```
-The complete MISFT code can be found in the folder ./script/run_sft.sh, just run the following command:
+The complete MISFT code can be found in `./script/run_sft.sh`, just run the following command:
 ```bash
 bash run_sft.sh
 ```
@@ -96,7 +96,7 @@ torchrun $DISTRIBUTED_ARGS ../kto/kto.py \
     --save_only_model \
     --output_dir "./output_dir"
 ```
-The complete KTO code can be found in the folder ./script/run_kto.sh, just run the following command:
+The complete KTO code can be found in `./script/run_kto.sh`, just run the following command:
 ```bash
 bash run_kto.sh
 ```
@@ -122,10 +122,10 @@ print(response)
 ```
 
 ## Data Release
-Our testing data is released in the data folder, and the training example can be found in data/trainset_example folder including MISFT and KTO stage. Our full training data will be coming soon....
+Our testing data is released in the `data` folder, and the training example can be found in `data/trainset_example` folder including MISFT and KTO stage. Our full training data will be coming soon ...
 
 ## Model Release
-Our post-trained model will be coming soon on huggingface....
+Our post-trained model will be coming soon on huggingface ...
 
 ## Citation 
 If you encounter any question about our work, please do not hesitate to submit an issue. If you do find our resources helpful, please cite our paper.
