@@ -4,7 +4,7 @@ This repository contains the code for LLMOPT, enabling the reproduction of data 
 
 ## 🔥News
 
-- [2024/09/30]: We firstly release our training and test code, as well as data generation code for LLOPT.
+- [2024/09/30]: We firstly release our training and test code, as well as data generation code for LLMOPT.
 
 ## Overview
 ![LLMOPT](./docs/fw.png)
