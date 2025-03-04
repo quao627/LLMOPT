@@ -131,12 +131,13 @@ Our post-trained model will be coming soon on huggingface ...
 If you encounter any question about our work, please do not hesitate to submit an issue. If you do find our resources helpful, please cite our paper.
 
 ```
-@article{jiang2024llmopt,
+@inproceedings{JiangShu2025llmopt,
   title     = {LLMOPT: Learning to Define and Solve General Optimization Problems from Scratch},
   author    = {Caigao Jiang and Xiang Shu and Hong Qian and Xingyu Lu and Jun Zhou and Aimin Zhou and Yang Yu},
-  journal   = {arXiv preprint arXiv:2410.13213},
-  year      = {2024},
-  url       = {https://arxiv.org/pdf/2410.13213}
+  booktitle = {Proceedings of the Thirteenth International Conference on Learning Representations (ICLR)},
+  year      = {2025},
+  address   = {Singapore, Singapore},
+  url       = {https://openreview.net/pdf?id=9OMvtboTJg}
 }
 ```
 
