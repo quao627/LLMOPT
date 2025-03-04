@@ -2,6 +2,8 @@
 
 This repository contains the code for LLMOPT, enabling the reproduction of data generation, model learning, and automated testing as described in the accompanying paper. The running shell are in the `script` folder with the deepspeed training config in `config`.
 
+Our paper can be found [here](https://openreview.net/pdf?id=9OMvtboTJg).
+
 ## 🔥News
 - [2025/01/22]: Our paper "LLMOPT: Learning to Define and Solve General Optimization Problems from Scratch" accepted by ICLR2025!!! 🔥.
 - [2024/09/30]: We firstly release our training and test code, as well as data generation code for LLMOPT.
