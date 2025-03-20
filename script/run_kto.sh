@@ -18,7 +18,7 @@ DISTRIBUTED_ARGS="
     --master_port $MASTER_PORT
 "
 
-torchrun $DISTRIBUTED_ARGS kto.py \
+torchrun $DISTRIBUTED_ARGS ../kto/kto.py \
     --deepspeed ${DS_CONFIG_PATH} \
     --per_device_train_batch_size 4 \
     --num_train_epochs 100 \
