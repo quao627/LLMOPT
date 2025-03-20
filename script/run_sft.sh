@@ -63,7 +63,7 @@ DISTRIBUTED_ARGS="
 "
 
 
-torchrun $DISTRIBUTED_ARGS ft.py \
+torchrun $DISTRIBUTED_ARGS ../sft/sft.py \
     --model_name_or_path $MODEL \
     --data_path $DATA \
     --bf16 True \
