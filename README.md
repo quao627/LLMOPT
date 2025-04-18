@@ -24,7 +24,7 @@ with `python>=3.6`.
 ### Installation
 For development, you can clone the repository and install it locally.
 ```bash
-git clone https://anonymous.4open.science/r/LLMOPT
+git clone https://github.com/caigaojiang/LLMOPT.git
 cd LLMOPT
 ```
 
