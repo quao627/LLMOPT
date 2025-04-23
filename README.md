@@ -55,6 +55,8 @@ We release the [LLMOPT-Qwen2.5-14B](https://huggingface.co/ant-opt/LLMOPT-Qwen2.
 |      ER w/o self-correction      |      97.42%      |      98.29%      |      77.73%      |      97.93%      |      88.89%      |      61.00%      |      93.90%      |      73.22%      |      31.93%      |      80.03%      |
 |      SA w/o self-correction      |      80.28%      |      89.53%      |      44.08%      |      73.42%      |      35.29%      |      29.00%      |      75.35%      |      53.83%      |      12.50%      |      54.81%      |
 
+In the experiment, we use three performance metrics to comprehensively evaluate the optimization generalization of the algorithm, namely, **Execution Rate (ER), Solving Accuracy (SA), and Average Solving Times (AST)**. Specifically, **ER** refers to the proportion of solutions whose code can run without any errors and has running results output. **SA** refers to the proportion of solutions that correctly solve the optimization problem, i.e., find the optimal solution. **AST** refers to the average number of times the self-correction process is performed during the test. 
+
 ## 📊Dataset Release
 
 All the 9 testing datasets is released in the `./data` folder. The following is an introduction.
