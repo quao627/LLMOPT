@@ -4,8 +4,8 @@ import generate_prompt
 
 
 # load model and tokenizer
-path = ''
-path_t = ''
+path = '/orcd/scratch/seedfund/001/multimodal/qua/huggingface/hub/LLMOPT-Qwen2.5-14B'
+path_t = '/orcd/scratch/seedfund/001/multimodal/qua/huggingface/hub/LLMOPT-Qwen2.5-14B'
 device = "cuda"
 model = AutoModelForCausalLM.from_pretrained(
     path,
@@ -84,7 +84,7 @@ def test_code(code_str):
 
 
 # example usage
-question = ""
+question = "Consider a problem where we have a set `P`. For each element `j` in `P`, we have a parameter `a[j]`, a parameter `c[j]`, and a parameter `u[j]`. We also have a global parameter `b`. We have a variable `X[j]` for each `j` in `P`. The goal is to maximize the total profit, which is the sum of `c[j] * X[j]` for all `j` in `P`. The constraints are that the sum of `(1/a[j]) * X[j]` for all `j` in `P` should be less than or equal to `b`, and `X[j]` should be between 0 and `u[j]` for all `j` in `P`.\n\nThe following parameters are included in this problem:\na: a list of integers, parameter for each element in set P\nc: a list of integers, profit coefficient for each element in set P\nu: a list of integers, upper limit for each element in set P\nb: an integer, the global constraint parameter\n\n\nThe following data is included in this problem:\n{'a': [3, 1, 2], 'c': [5, 10, 8], 'u': [4, 6, 3], 'b': 4}"
 five_elem = infer_five_elem(question)
 code_str = infer_code(five_elem)
 out_log, err_log = test_code(code_str)
