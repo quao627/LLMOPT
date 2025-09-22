@@ -1,6 +1,9 @@
 from transformers import AutoTokenizer, AutoModelForCausalLM
 import subprocess
-import generate_prompt
+import sys
+import os
+sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
+from prompts import generate_prompt
 
 
 # load model and tokenizer
