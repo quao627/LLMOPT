@@ -143,7 +143,7 @@ if __name__ == "__main__":
     parser.add_argument("--dir", type=str, help="Directory of the problem")
     parser.add_argument("--data_dir", type=str, default="../baseline_test_data", help="Directory containing baseline test data")
     parser.add_argument("--dataset_file", type=str, default="nlp4lp_test.json", help="JSON file with test problems")
-    parser.add_argument("--max_workers", type=int, default=1, help="Maximum number of concurrent threads (default: None for auto)")
+    parser.add_argument("--max_workers", type=int, default=10, help="Maximum number of concurrent threads (default: None for auto)")
     args = parser.parse_args()
     results = eval(args.data_dir, args.dataset_file, args.max_workers)
     os.makedirs(f"../results/llmopt/{args.dataset_file.replace('.json', '')}", exist_ok=True)
